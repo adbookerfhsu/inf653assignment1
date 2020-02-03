@@ -4,18 +4,11 @@
     if (!isset($last_name)) { $last_name = $_GET['lastname']; } 
     if (!isset($age)) { $age = $_GET['age']; } 
     
-    
-    // get data from the request
-    /* $first_name = $_GET['firstname'];
-     $last_name = $_GET['lastname'];
-     $age = $_GET['age'];  
-     */
-     if ($age <18) {
+    if ($age <18) {
          $can_vote = 'I am not old enough to vote in the United States';
      } else {
          $can_vote = 'I am old enough to vote in the United States';
      }
-
         
     
     ?>
